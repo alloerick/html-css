@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightslategray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: #707070;
+            padding: 3px;
+            box-shadow: 3px 3px 6px #00000060;
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 6px;
+            box-shadow: 3px 3px 6px #00000060;
+        }
+        article {
+            background-color: lightgray;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        article > p {
+            text-align: justify;
+        }
+        article > aside {
+            background-color: #a1a1a1;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 50px 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <!-- header, main e footer são como uma div, porem com um valor semântico
+    "header" é uma tag de cabeçalho em HTML5 -->
+    <header>
+        <h1>Meu Site</h1>
+        <nav> <!-- criação de menu do site -->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    
+    <!-- "main" é a tag que corresponde ao conteudo principal de um site em HTML5 -->
+    <main>
+        <section id="assuntos">
+            <p>Exportes - Políticas - Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laborum adipisci dicta voluptatem neque error et, quod quibusdam necessitatibus odio, hic molestiae officia laudantium, vero tempora vitae voluptatibus optio voluptate.</p>
+                <aside>
+                    <p>Artigo escrito por José Silva</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Mundo a Fora</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nostrum aspernatur deserunt quos iusto! Iure deleniti error sint quas commodi at perferendis itaque quaerat cupiditate voluptates qui veritatis, neque dicta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quos hic, reprehenderit voluptatibus harum, repellendus quidem ex distinctio itaque obcaecati veniam quisquam omnis recusandae quo cupiditate dolore doloremque. Facilis, eum.</p>
+                <aside>
+                    <p>Materia escrita por João Baros</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <!-- "footer" é uma tag de rodapé em HTML5 -->
+    <footer>
+        <p>Apenas um Site de Teste</p>
+    </footer>
+</body>
+</html>

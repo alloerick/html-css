@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou mude o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 740px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1040px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem dinâmica">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Reproduzindo áudios em HTMAL5</p>
+    <p>Metodo 1</p>
+    <audio src="midia/kiss.mp3" controls></audio> <!-- Metodo padrão, o navegador de internet pode não reconhecer a mídia -->
+    <p>Metodo 2</p>
+    <audio preload="auto" controls> <!-- Metodo para adicionar mais de um arquivo de audio -->
+        <source src="midia/slow-ride.mp3" type="audio/mpeg">
+        <source src="midia/slow-ride.ogg" type="audio/ogg">
+        <source src="midia/slow-ride.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir o áudio. <a href="midia/slow-ride.mp3">Clique aqui para baixar o arquivo MP3!</a></p>
+    </audio>
+</body>
+</html>

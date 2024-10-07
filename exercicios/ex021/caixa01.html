@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color: lightsalmon;
+            height: 300px;
+            width: 300px;
+            
+            /* border-width: 10px;
+            border-style: solid;
+            border-color: brown; forma siplificada abaixo */
+            border: 10px solid brown;
+
+            /* padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; forma siplificada abaixo */
+            padding: 10px; /* OBS: se for quadrado basta apenas um valor, se for retangular basta apenas 2 valores */
+
+            /* margin-top: 10px;
+            margin-right: auto;
+            margin-bottom: 40px;
+            margin-left: auto; forma siplificada abaixo */
+            margin: 10px auto 40px auto;
+
+            /* outline-width: 6px;
+            outline-style: dashed;
+            outline-color: darkolivegreen; forma siplificada abaixo */
+            outline: 6px dashed darkolivegreen;
+        }
+        a {
+            /* border-width: 10px;
+            border-style: solid;
+            border-color: coral; forma siplificada abaixo */
+            border: 10px solid coral;
+
+            /* padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; forma siplificada abaixo */
+            padding: 10px;
+        }
+    </style>
+</head>
+    <!-- BOX-LEVEL: pula uma linha, ocupa uma linha inteira e pula outra linha.
+     são box-level <div>, <h1>...<h6>, <main>, <header>, <nav>, <article>, <aside>, <footer>, <form>, <video>...
+    
+    INLINE-LEVEL: ocupa apenas sua área delimitada.
+    são inline-level <span>, <a>, <code>, <small>, <strong>, <em>, <sup>...<sub>, <label>, <button>, <input>, <select>... -->
+<body>
+    <h1>Exemplo de Caixa BOX-LEVEL</h1>
+    <p>Parágrafos também são do tipo box-level, mas os <a href="#">links são um exemplo de caixa inline-livel</a>. vamos ver como tudo isso funciona!</p>
+</body>
+</html>

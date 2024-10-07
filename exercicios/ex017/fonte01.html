@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            background-image: linear-gradient(180deg, red, yellow, green, blue, purple 85%);
+            background-attachment: fixed;
+            font-family: cursive;
+            /*
+            Em relação a font-size:
+            Medidas absolutas
+            cm, mm, in(polegada), px(pixel), pt(ponto), pc(paica)
+            
+            Medidas relativas
+            em(tamanho M atual da fonte), ex(tamanho x atual da fonte), rem, vw, vh, %
+            16px =~ 1em
+            */
+            font-size: 1.1em;
+
+        }
+        main{
+            background-color: rgba(255, 255, 255, 0.595);
+            border-radius: 10px;
+            padding: 15px;
+            width: auto ;
+            margin: 25px;
+        }
+        h1{
+            font-size: 2.2em;
+            font-style: italic;
+            /* shorthant font (metodo para mudar fonte usando 'font' no CSS)
+            - font-style -> font-weight -> font-size -> font-family
+
+            font-family: 'work sans', sans-seif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+
+            font: italic bolder 3em 'work sans', sans-serif;
+            */
+        }
+        p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Trabalhando com Fontes</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto eum quas quos distinctio voluptates magnam optio reprehenderit asperiores adipisci harum, et, voluptatum nisi accusantium perferendis fugiat sint veritatis id? Quam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ullam modi impedit laborum ipsum quam magnam ea. Veniam, dolore, distinctio sunt unde illo in exercitationem, eos repellat ipsam ducimus inventore?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, veniam veritatis quaerat quam deleniti deserunt corporis illum libero. Dicta nihil quos nulla cum fugit similique veritatis atque autem aliquam placeat.</p>
+        <h2>Subtítulo de Exemplo</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, facere iure modi eaque sequi ut delectus? Doloribus repellat architecto voluptatum incidunt ipsa illo delectus qui at earum iure, quas velit.</p>
+    </main>
+</body>
+</html>
